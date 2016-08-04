@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      
+    <title>Getting the days</title>
+    <!--CSS-->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/day1.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--JS-->  
+    <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/day1.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--RESET-->
+
+ 	<style>
+		html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote{
+    		padding: 0;
+    		margin: 0;
+    		font-weight: normal;
+            
+		}
+ 	</style>
+  </head>
+  <body>
+      <br/><br/>
+      <div  id="Day1" class="container"><!--principal-->
+          
+          <div class="row">
+          
+                <div class="col-md-5 ">
+                    <!--JUMBOTRON-->
+                    <div  class="jumbotron jmb" >
+                        <div class="container" >
+                            <h1 id="sml"><br/>FECHAS PLANEADAS<br/><h4><strong>NOTA:</strong> El primer entregable de cada secci&oacute;n de esta columna</h4><h3 style="color:#FF3D00">es</h3><h4> obligatorio a llenar, favor de s&oacute;lo utilizar n&uacute;meros para las fehcas y letras para el nombre de los entregables. El <ins>nombre</ins> que le haya dado a un entregable debe coincidir tanto en esta columna como en la de la derecha.</h4></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 blank"></div>
+                <div class="col-md-5 blank">
+                    <!--JUMBOTRON-->
+                    <div  class="jumbotron jmb" >
+                        <div class="container" >
+                            <h1 id="sml"><br/>FECHAS REALIZADAS<br/><h4><strong>NOTA:</strong> Los entregables de esta columna </h4><h3 style="color:#FF3D00">no son</h3> <h4>obligatorios a llenar, favor de usar s&oacute;lo n&uacute;meros para las fehcas y letras para el nombre de los entregables. El <ins>nombre</ins> que le haya dado a un entregable debe coincidir tanto en esta columna como en la de la izquierda.</h4></h1>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          
+    <form role="form" method="get" action="day1.php">
+          
+        <div class="row"><!--DISEÑO-->
+            
+                <div id="diseñoI" class="col-md-5 miniform">
+                    <div class="col-md-12 ">
+                        <h3>DISEÑO</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregables[]" placeholder="sin números"  required>
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]"  required>
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]" required>
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastDI" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="dI" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-2 blank"></div>
+                <div id="diseñoR" class="col-md-5 miniform">
+                     <div class="col-md-12 ">
+                        <h3>DISEÑO</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregablesR[]" placeholder="sin números "  >
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastDR" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="dR" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+          
+        <div class="row"><div class="col-md-12 blank"></div></div><!--blank separator -->
+          
+        <div class="row"><!--IMPLEMENTACIÓN-->
+
+                <div id="impleI" class="col-md-5 miniform">
+                    <div class="col-md-12 ">
+                        <h3>IMPLEMENTACI&Oacute;N</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregables[]" placeholder="sin números ">
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]" required>
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]" required>
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastII" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="iI" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-2 blank"></div>
+                <div id="impleR" class="col-md-5 miniform">
+                    <div class="col-md-12 ">
+                        <h3>IMPLEMENTACI&Oacute;N</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregablesR[]" placeholder="sin números" >
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastIR" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="iR" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+          
+        <div class="row"><div class="col-md-12 blank"></div></div><!--blank separator -->
+          
+        <div class="row"><!--PRUEBAS-->
+
+                <div id="pruebasI" class="col-md-5 miniform">
+                    <div class="col-md-12 ">
+                        <h3>PRUEBAS</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregables[]" placeholder="sin números" required>
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]" required>
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregables[]" required>
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastPI" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="pI" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-2 blank"></div>
+                <div id="pruebasR" class="col-md-5 miniform">
+                    <div class="col-md-12 ">
+                        <h3>PRUEBAS</h3>
+                    </div>
+                    <div class="form-group ">
+                            <div class="col-md-12 ">
+                                <br/><label >Entregable:</label>
+                            </div>
+                            <div class="col-md-10 "> 
+                                <input type="text" class="form-control input-md" id="nombre" name="entregablesR[]" placeholder="sin números" >
+                                <br/><label >Fecha inicial:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/><label >Fecha final:</label>
+                                <input id="dp" type="date" class="form-control" name="entregablesR[]" >
+                                <br/>
+                            </div>
+                    </div>
+                    
+                    <div id="lastPR" class="row">
+                        <div class="col-md-3 col-md-offset-10"> 
+                            <a id="pR" href="#" class="btn btn-default btn-circle btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+          
+        <div class="row"><div class="col-md-12 blank"></div></div><br/><!--blank separator -->
+              
+        <div class="row">
+            
+             <div class="col-md-4"></div>
+             <div id="ok" class="col-md-4 ">
+                <button id="send" type="submit" class="btn btn-default btn-circle btn-ll"><span class="glyphicon glyphicon-thumbs-up"></span>                     </button>
+             </div>
+             <div class="col-md-4 "></div>
+          </div>
+        
+    </form>      
+   </div>
+      
+  </body>
+</html>
+
+

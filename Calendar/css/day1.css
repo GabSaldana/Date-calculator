@@ -1,0 +1,58 @@
+.blank{
+    
+   /*background-color: blue;*/
+    height: 30px;
+}
+
+.jmb{
+    
+    padding: 5px 0px 50px 0px;
+    background-color: #FAFAFA; 
+    box-shadow: 0px 4px 8px #616161;
+}
+
+
+body{
+    font-family: 'Roboto';
+}
+label{
+    font-family: 'Roboto';
+}
+
+#sml{
+    color:#607D8B;
+    font-family: 'Roboto';
+    font-size: 50px;
+}
+
+.miniform{
+    
+    background-color: #26C6DA; 
+    padding: 20px 10px 10px 20px;
+    box-shadow: 0px 4px 8px #616161;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 2px 8px 2px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+#ok{
+    
+    padding: 20px 0px 20px 170px;
+}
+
+.btn-circle.btn-ll {
+  width: 80px;
+  height: 80px;
+  padding: 10px 16px;
+  font-size: 50px;
+  line-height: 1.33;
+  border-radius: 40px;
+  color:white;
+  background-color: #3F51B5;
+}

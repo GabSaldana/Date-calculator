@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<html>
+	<head>
+	
+		<title>
+			Formulario
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/CSS.css">	 
+		
+	</head>
+	
+	<body>
+	
+		<div id = "header">
+			<div class = "description"> <b>Características Generales</b></div> 
+			<div class = "title"> Formulario de Requerimientos </div> 
+		</div>	
+			
+	
+	 	<div class = "content"> 
+		
+			<form action=datos.php method=post> 
+			
+			<h2> Ambiente </h2>
+			
+				<!--------------------------------------------------------------------------->
+				<div class = "row">
+					<div class = "l1 l">				
+						<label>¿En cuántas plataformas funciona la aplicación?</label> <br>
+						
+						<input name="plataforma" value="1" type="checkbox" id = "c1" checked> 
+							<label for = "c1" class = "options"> <span></span> Escritorio</label>	
+						
+						
+						<input name="plataforma" value="2" type="checkbox" id = "c2">
+						<label for = "c2" class = "options"> <span></span> Móvil</label>	
+						
+
+						<input name="plataforma" value="3" type="checkbox" id = "c3">
+						<label for = "c3" class = "options"> <span></span> Web</label>
+								
+					</div>
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l2 l">
+						<label> ¿Se puede utilizar en más de un sistema operativo/navegador? Si es así, ¿en cuántos?</label><br>
+						
+						<input name="sistema" value="1" type="radio" id = "r1" checked> 
+							<label for = "r1" class = "options"> <span></span> Sólo en uno</label>	
+						
+						
+						<input name="sistema" value="2" type="radio" id = "r2">
+						<label for = "r2" class = "options"> <span></span> Dos o Tres</label>	
+						
+
+						<input name="sistema" value="3" type="radio" id = "r3">
+						<label for = "r3" class = "options"> <span></span> Más de tres</label>
+					</div>				
+				</div>
+				<!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l3 l">
+						<label> ¿La aplicación es portable?</label><br>
+						
+						<input name="portable" value="1" type="radio" id = "r4" checked> 
+							<label for = "r4" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="portable" value="0" type="radio" id = "r5">
+						<label for = "r5" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				<!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l4 l">
+						<label> ¿La aplicación puede escalarse o soportar control de cambios?</label><br>
+						
+						<input name="escalar" value="1" type="radio" id = "r6" checked> 
+							<label for = "r6" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="escalar" value="0" type="radio" id = "r7">
+						<label for = "r7" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>				
+				<!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l5 l">
+						<label> ¿Se realizaron diferentes pruebas antes de su lanzameinto como poducto?</label><br>
+						
+						<input name="pruebas" value="1" type="radio" id = "r8" checked> 
+							<label for = "r8" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="pruebas" value="0" type="radio" id = "r9">
+						<label for = "r9" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>				
+				
+				
+				<h2> Interfaz </h2>
+			
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l11 l">
+						<label> ¿El diseño de la aplicación va de acuerdo al público usuario?</label><br>
+						
+						<input name="diseno" value="1" type="radio" id = "r10" checked> 
+							<label for = "r10" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="diseno" value="0" type="radio" id = "r11">
+						<label for = "r11" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l12 l">
+						<label> ¿El lenguaje que utiliza la aplicación es entendible para la mayoría de los usuarios?</label><br>
+						
+						<input name="lenguaje" value="1" type="radio" id = "r12" checked> 
+							<label for = "r12" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="lenguaje" value="0" type="radio" id = "r13">
+						<label for = "r13" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l13 l">
+						<label> ¿La aplicación utiliza diferentes paletas de colores que van de acuerdo a su función y al público?</label><br>
+						
+						<input name="colores" value="1" type="radio" id = "r14" checked> 
+							<label for = "r14" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="colores" value="0" type="radio" id = "r15">
+						<label for = "r15" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l14 l">
+						<label> ¿Según las pruebas,la myoría de los usuarios puede utilizar la aplicación sin asesoías extras?</label><br>
+						
+						<input name="probar" value="1" type="radio" id = "r16" checked> 
+							<label for = "r16" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="probar" value="0" type="radio" id = "r17">
+						<label for = "r17" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				
+				
+				<h2> Información </h2>
+			
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l111 l">
+						<label> ¿La aplicación respalda la veracidad de la información que presenta?</label><br>
+						
+						<input name="verdad" value="1" type="radio" id = "r18" checked> 
+							<label for = "r18" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="verdad" value="0" type="radio" id = "r19">
+						<label for = "r19" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l112 l">
+						<label> ¿La informació ingresada por los usuarios se manejar de acuerdo a los acuerdos de privacidad establecidos?</label><br>
+						
+						<input name="privado" value="1" type="radio" id = "r20" checked> 
+							<label for = "r20" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="privado" value="0" type="radio" id = "r21">
+						<label for = "r21" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l113 l">
+						<label> ¿La aplicación esta diseñada con algún algoritmo criptográfico que brinde la seguridad necesaria a la información ingresada?</label><br>
+						
+						<input name="seguro" value="1" type="radio" id = "r22" checked> 
+							<label for = "r22" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="seguro" value="0" type="radio" id = "r23">
+						<label for = "r23" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+				 <!--------------------------------------------------------------------------->
+				<div class = "row"> 				  
+					<div class = "l114 l">
+						<label> ¿Existen métodos de recuperación en caso de ataques a la seguridad del sistema?</label><br>
+						
+						<input name="ataques" value="1" type="radio" id = "r24" checked> 
+							<label for = "r24" class = "options"> <span></span> Si</label>	
+						
+						
+						<input name="ataques" value="0" type="radio" id = "r25">
+						<label for = "r25" class = "options"> <span></span> No</label>	
+					</div>				
+				</div>
+
+
+
+
+
+
+				
+				<input type="submit" class = "send" value = "Send">
+				  
+			</form>	
+			
+			
+		</div> 	
+	</body>
+</html>
